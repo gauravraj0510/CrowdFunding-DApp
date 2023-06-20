@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import FundCard from "./FundCard";
 import { loader } from "../assets";
 
-const DisplayCampaigns = ({ title, isLoading, campaigns }) => {
+const DisplayCampaigns = ({ title, isLoading, campaigns, address }) => {
   const navigate = useNavigate();
 
   const handleNavigate = (campaign) => {
@@ -13,6 +13,16 @@ const DisplayCampaigns = ({ title, isLoading, campaigns }) => {
 
   return (
     <div>
+      {address ? (
+        <h1 className="font-epilogue font-semibold text-[14px] text-[#1dc071] text-left">
+          Account Address:
+        </h1>
+      ) : (
+        ""
+      )}
+      <h1 className="font-epilogue font-semibold text-[24px] text-white text-left mb-[28px]">
+        {address}
+      </h1>
       <h1 className="font-epilogue font-semibold text-[18px] text-white text-left">
         {title} ({campaigns.length})
       </h1>
