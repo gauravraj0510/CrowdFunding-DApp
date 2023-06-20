@@ -2,7 +2,7 @@
 
 - Create crowd funding campaigns.
 - Donate to campaigns.
-- Dashboard to view all Campaign an dtheir details.
+- Dashboard to view all Campaign and their details.
 
 ## Demo
 
